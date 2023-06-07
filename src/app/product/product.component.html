@@ -1,0 +1,81 @@
+<p>product works!</p>
+
+
+<h2>ganesh sadar</h2>
+<p>
+    <mat-toolbar color="primary">
+
+        <span>My App</span>
+        <span class="example-spacer"></span>
+
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            Add User
+        </button>
+    </mat-toolbar>
+</p>
+<div class="container">
+    <div class="row box">
+        <div class="justify-containt-center">
+            <div class="col-md-3">
+                <form [formGroup]="loginform">
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>First name</mat-label>
+                            <input matInput placeholder="enter first name" formControlName="user" required>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>company</mat-label>
+                            <input matInput placeholder="enter company name" formControlName="company" required>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>salary</mat-label>
+                            <input matInput placeholder="enter salary" formControlName="salary" required>
+                        </mat-form-field>
+                    </div>
+                    <div class="btn">
+
+                        <div>
+                            
+                                <button mat-raised-button color="accent" type="submit" (click)="adddatadetail()">Add</button>
+                        </div>
+                        <div>
+                            <button mat-raised-button color="warn" type="submit"
+                                (click)="updatedetail()">update</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>company</th>
+                <th> salary</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of alldata ; let p=index">
+                <td>{{i.user}}</td>
+                <td>{{i.company}}</td>
+                <td>{{i.salary}}</td>
+                <td>
+                    <button type="submit" (click)="deletuser(i.id)">delet</button>
+                    <button type="submit" (click)="onClick(i.id,p)">update</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

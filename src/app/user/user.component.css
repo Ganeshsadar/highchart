@@ -1,0 +1,8 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-icon{
+    background-color: rgb(237, 121, 13);
+    border-radius: 10px;
+    width: 150px;
+  }

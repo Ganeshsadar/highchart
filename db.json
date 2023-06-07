@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "user": "ganesh@gmail.com",
+      "company": "senwel",
+      "salary": "11111",
+      "id": 2
+    },
+    {
+      "user": "sadar@gmail.com",
+      "company": "hhhaa",
+      "salary": "111111",
+      "id": 3
+    },
+    {
+      "user": "jdg@gmail.com",
+      "company": "fdhas",
+      "salary": "sdf",
+      "id": 4
+    },
+    {
+      "user": "asu@gmail.com",
+      "company": "sssss",
+      "salary": "ssss",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
